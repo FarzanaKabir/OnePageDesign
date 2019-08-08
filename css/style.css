@@ -116,7 +116,7 @@ header .nav-item {
 /*  padding-left: 8rem;*/
 /*}*/
 
-header .nav-link:hover{
+header .nav-link:hover {
     color: var(--btn-bg);
 }
 
@@ -185,6 +185,7 @@ header .signup-btn {
     position: relative;
     z-index: 2;
 }
+
 header .signup-btn:before {
     -webkit-transition: .5s all ease;
     transition: .5s all ease;
@@ -198,18 +199,19 @@ header .signup-btn:before {
     background-color: var(--btn-bg);
     z-index: -1;
 }
+
 header .signup-btn:hover,
-header .signup-btn:focus
-{
-  color: #FFF;
+header .signup-btn:focus {
+    color: #FFF;
 }
+
 header .signup-btn:hover:before,
-header .signup-btn:focus:before{
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
+header .signup-btn:focus:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
 }
 
 header .form {
@@ -258,7 +260,7 @@ header .btn-group .btn {
     text-transform: capitalize;
 }
 
-header hr{
+header hr {
     width: 75%;
 }
 
@@ -274,6 +276,12 @@ header hr{
     background: var(--btn-bg);
     font-size: 12px;
     padding: 10px 27px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+.primary-btn:hover {
+    color: #FFFFFF;
 }
 
 /********** section 1 **************/
@@ -389,6 +397,7 @@ header hr{
     color: var(--btn-bg);
 }
 
+
 #video {
     height: 100%;
     width: 100%;
@@ -426,9 +435,11 @@ header hr{
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.section-3 .about-us .video-btn:focus{
+
+.section-3 .about-us .video-btn:focus {
     outline: none;
 }
+
 .section-3 .about-us .video-btn:hover {
     background: var(--btn-bg);
     color: #ffffff;
