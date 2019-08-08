@@ -1,0 +1,139 @@
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .82rem;
+    }
+
+    header .form {
+        padding: 5px 0 5px 0;
+    }
+
+    header .form .input-size {
+        width: 42%;
+        padding: 0 0 0 15px;
+    }
+
+    .section-2 .cards .card {
+        padding: 40px 10px 10px 10px;
+    }
+
+    .section-2 .cards .card-body {
+        padding: 7px;
+    }
+
+    .section-2 .cards .card .card-body a:hover,
+    .section-2 .cards .card .card-body .active {
+        padding: 5px 7px;
+        font-size: .6rem;
+    }
+
+    .section-2 .card .text {
+        margin-bottom: 24px !important;
+    }
+
+    .container {
+        padding-top: 0 !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .row {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .view-btn {
+        padding: 9px 18px;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .subscribe-btn {
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+
+    .about-us .pl-5.pr-5 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .about-us h2 {
+        font-size: 1.5rem !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .about-us p {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .about-us h5 {
+        margin-top: 0 !important;
+    }
+
+    .section-3 .container.mt-5.mb-5.pt-5 {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+/* screen size 375px */
+
+@media only screen and (max-width: 375px) {
+    header .btn-group {
+        display: initial !important;
+    }
+
+    header .btn-group li {
+        margin-top: 12px;
+    }
+
+    header .form .input-size {
+        width: 34%;
+        padding: 0 0 0 8px;
+    }
+
+    .section-1 .col-md-4,
+    .section-2 .col-md-4,
+    .section-3 .col-md-3,
+    .footer-top .col-md-2,
+    .footer-top .col-md-4 {
+        margin: 10px 0;
+    }
+
+    .section-4 {
+        padding-bottom: 0;
+    }
+
+    .section-3 {
+        padding-bottom: 155vmin;
+    }
+
+    .section-4 select {
+        margin-bottom: 15px;
+    }
+
+    .footer-top img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .primary-btn {
+        font-size: 11px;
+        padding: 5px 15px;
+    }
+
+    .section-4 .newsletter-title {
+        margin: 75vmin 0 0 0;
+    }
+}

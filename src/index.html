@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Books</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile-style.css">
+</head>
+
+<body>
+<header>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="fas fa-align-right text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown text-uppercase">
+                        <div class="dropdown dot">
+                            <a href="#" class="nav-link">restaurants</a>
+                            <div class="dropdown-content">
+                                <a href="#">restaurant 1</a>
+                                <a href="#">restaurant 2</a>
+                                <a href="#">restaurant 3</a>
+                                <a href="#">restaurant 4</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-uppercase">
+                        <div class="dropdown dot">
+                            <a href="#" class="nav-link">categories</a>
+                            <div class="dropdown-content">
+                                <a href="#">category 1</a>
+                                <a href="#">category 2</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="#">write a reviews</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="btn signup-btn" href="#">sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container banner">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h1 class="text-dark banner-text">Eat what you want, <span>where you want</span></h1>
+                <form class="form">
+                    <div class="form-row m-0">
+                        <div class="d-flex input-size">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="form-control border-right" placeholder="Find Restaurant, Chines">
+                        </div>
+                        <div class="d-flex input-size">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" class="form-control" placeholder="Near Dhanmondi">
+                        </div>
+                        <button type="submit" class="btn btn-sm primary-btn text-uppercase">Search</button>
+                    </div>
+                </form>
+                <ul class="d-flex align-item-center justify-content-center btn-group p-0 pt-5 pb-4 m-0">
+                    <li>
+                        <button class="btn btn-sm btn-light">chines</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-sm btn-light">indian</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-sm btn-light">couisin</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-sm btn-light"> bangla</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-sm btn-light">fast food</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="row text-right">
+        <div class="col-md-12 col-sm-12  h-25">
+            <img src="../assets/banner.png" alt="Book" class="mr-auto img-fluid">
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section-1">
+
+        <!-- carousel start-->
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headline text-center">
+                        <h1 class="text-capitalize font-weight-bold">restaurants nearby</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row restaurant">
+                <div class="col-md-12">
+                    <div id="restaurantCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#restaurantCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#restaurantCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 col-sm-12">
+                                        <div class="card text-center h-100 active">
+                                            <div class="card-img">
+                                                <img src="../assets/slide1.png" alt="" class="card-img-top img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title m-0 text-capitalize font-weight-bold">karaweik burmese cuisine</h5>
+                                                <ul class="rating d-flex p-0 m-0 justify-content-center">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><span class="text-muted ml-2">23 reviews</span></li>
+                                                </ul>
+                                                <div class="time d-flex justify-content-center justify-content-center">
+                                                    <small class="text-muted"><i class="far fa-clock"></i> 5 mints away
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 col-sm-12">
+                                        <div class="card text-center h-100">
+                                            <div class="card-img">
+                                                <img src="../assets/slide2.png" alt=""
+                                                     class="card-img-top img-fluid w-55">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title m-0 text-capitalize font-weight-bold">ontario carrot quinoa</h5>
+                                                <ul class="rating d-flex card-text p-0 m-0 justify-content-center">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><span class="text-muted ml-2">23 reviews</span></li>
+                                                </ul>
+                                                <div class="time d-flex justify-content-center">
+                                                    <small class="text-muted"><i class="far fa-clock"></i> 5 mints away
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 col-sm-12">
+                                        <div class="card text-center h-100">
+                                            <div class="card-img">
+                                                <img src="../assets/slide3.png" alt="" class="card-img-top img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title m-0 text-capitalize font-weight-bold">na ya desert cafe</h5>
+                                                <ul class="rating d-flex card-text p-0 m-0 justify-content-center">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><span class="text-muted ml-2">23 reviews</span></li>
+                                                </ul>
+                                                <div class="time d-flex justify-content-center">
+                                                    <small class="text-muted"><i class="far fa-clock"></i> 5 mints away
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 col-sm-12">
+                                        <div class="card text-center h-100 active">
+                                            <div class="card-img">
+                                                <img src="../assets/slide1.png" alt="" class="card-img-top img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title m-0 text-capitalize font-weight-bold">karaweik burmese cuisine</h5>
+                                                <ul class="rating d-flex p-0 m-0 justify-content-center">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><span class="text-muted ml-2">23 reviews</span></li>
+                                                </ul>
+                                                <div class="time d-flex justify-content-center justify-content-center">
+                                                    <small class="text-muted"><i class="far fa-clock"></i> 5 mints away
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 col-sm-12">
+                                        <div class="card text-center h-100">
+                                            <div class="card-img">
+                                                <img src="../assets/slide2.png" alt=""
+                                                     class="card-img-top img-fluid w-55">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title m-0 text-capitalize font-weight-bold">ontario carrot quinoa</h5>
+                                                <ul class="rating d-flex card-text p-0 m-0 justify-content-center">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><span class="text-muted ml-2">23 reviews</span></li>
+                                                </ul>
+                                                <div class="time d-flex justify-content-center">
+                                                    <small class="text-muted"><i class="far fa-clock"></i> 5 mints away
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 col-sm-12">
+                                        <div class="card text-center h-100">
+                                            <div class="card-img">
+                                                <img src="../assets/slide3.png" alt="" class="card-img-top img-fluid">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title m-0 text-capitalize font-weight-bold">na ya desert cafe</h5>
+                                                <ul class="rating d-flex card-text p-0 m-0 justify-content-center">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                    <li><span class="text-muted ml-2">23 reviews</span></li>
+                                                </ul>
+                                                <div class="time d-flex justify-content-center">
+                                                    <small class="text-muted"><i class="far fa-clock"></i> 5 mints away
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+        </div>
+        <!-- carousel end-->
+
+        <div class="row mb-5 mt-5 pb-5 text-center">
+            <div class="col-md-12">
+                <button class="btn view-btn">View all</button>
+            </div>
+        </div>
+    </section>
+    <!-- section 1 end -->
+    <!-- section 2 start-->
+    <section class="section-2">
+        <div class="container mt-5 mb-5 pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headline text-left">
+                        <h1 class="text-capitalize mb-4 font-weight-bold">testro for business</h1>
+                        <p class="m-0">Testro brigs you new customers and helps your regulars order more.</p>
+                        <p class="m-0">See what changes we can bring to your business</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards row mt-5 pt-4 mb-5">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card h-100">
+                        <img src="../assets/icon1.png" class="card-img-top w-15" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Old Management</h5>
+                            <p class="card-text text mt-4 mb-5">Testro brigs you new customers and helps your regulars
+                                order more.See
+                                what changes...</p>
+                            <a class="active" href="#">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card h-100">
+                        <img src="../assets/icon2.png" class="card-img-top w-15" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Inventory Management</h5>
+                            <p class="card-text text mt-4 mb-5">Testro brigs you new customers and helps your regulars
+                                order more.See
+                                what changes...</p>
+                            <a href="#">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card h-100">
+                        <img src="../assets/icon3.png" class="card-img-top w-15" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">User Engagement</h5>
+                            <p class="card-text text mt-4 mb-5">Testro brigs you new customers and helps your regulars
+                                order more.See
+                                what changes...</p>
+                            <a href="#">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 end-->
+    <!-- section 3 start-->
+    <section class="section-3">
+        <div class="container mt-5 mb-5 pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headline text-left">
+                        <h1 class="text-capitalize font-weight-bold">find our cities</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 pt-5">
+                <div class="col-md-3">
+                    <ul class="country-list m-0 p-0">
+                        <li><h5 class="country-name text-capitalize font-weight-bold">helsinki</h5></li>
+                        <li class="name">turku</li>
+                        <li class="name">tampere</li>
+                        <li class="name">jyvaskiya</li>
+                        <li class="name">oulu</li>
+                        <li class="name">kuopio</li>
+                        <li class="name">tikkurila</li>
+                        <li class="name">lahti</li>
+                        <li class="name">vassa</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="country-list m-0 p-0">
+                        <li><h5 class="country-name text-capitalize font-weight-bold">stockholm</h5></li>
+                        <li class="name">pori</li>
+                        <li class="name">ravaniemi</li>
+                        <li class="name">joensuu</li>
+                        <li class="name">lappeenranta</li>
+                        <li class="name">stockholm</li>
+                        <li class="name">orebro</li>
+                        <li class="name">vasteras</li>
+                        <li class="name">norrkoping</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="country-list m-0 p-0">
+                        <li><h5 class="country-name text-capitalize font-weight-bold">warshaow</h5></li>
+                        <li class="name">linkoping</li>
+                        <li class="name">gavle</li>
+                        <li class="name">eskilstuna</li>
+                        <li class="name">sundsvall</li>
+                        <li class="name">tallinn</li>
+                        <li class="name">tartu</li>
+                        <li><h5 class="country-name text-capitalize font-weight-bold">talinn</h5></li>
+                        <li class="name">tartu</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="country-list m-0 p-0">
+                        <li class="name">linkoping</li>
+                        <li class="name">gavle</li>
+                        <li class="name">eskilstuna</li>
+                        <li class="name">sundsvall</li>
+                        <li class="name">tallinn</li>
+                        <li class="name">tartu</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5 mb-5 pb-5 text-center">
+                <div class="col-md-12">
+                    <button class="btn view-btn">view all</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 about-us shadow-lg ">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 pr-5 pl-5">
+                    <h5 class="font-weight-bold mt-5 pt-5">What they say about us</h5>
+                    <h2 class="mt-5 mb-4 pb-2 font-weight-bold">We ease the interaction among shops and shoppers</h2>
+                    <p class="text mb-5 mt-5 pb-5">To ease the interaction between the shop owners and the purchasers.Testro
+                        make
+                        personalised notification to the purchasers.</p>
+                    <a href="#" class="arrow mb-5">
+                        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 p-0">
+                    <div class="index-video-wrapper">
+                        <video poster="../assets/video_img.png" id="video">
+                            <source src="../assets/CameraLensVideo.mp4" type="video/mp4">
+                        </video>
+                        <button class="video-btn" type="button" id="play_button"><i class="fas fa-caret-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- section 3 end-->
+
+
+    <!-- section 4 start -->
+    <section class="section-4">
+        <div class="container mt-5 mb-5 pt-5 pb-5 text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="newsletter-title font-weight-bold">20% off on you first order by subscribing <br> to our
+                        newsletter!</h1>
+                    <p class="mt-3">Don't miss out on our great offers & receive deals from all our top vendors via
+                        e-mail</p>
+                    <form class="newsletter-form">
+                        <div class="form-row">
+                            <div class="col-md-4 col-sm-12">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>select your city</option>
+                                    <option>city 1</option>
+                                    <option>city 2</option>
+                                    <option>city 3</option>
+                                    <option>city 4</option>
+                                    <option>city 5</option>
+                                </select>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                       placeholder="Enter your email address">
+                            </div>
+                        </div>
+                    </form>
+                    <a href="#" class="subscribe-btn"><span>subscribe newsletter</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 4 end -->
+</main>
+<footer>
+    <section class="footer-top border-bottom">
+        <div class="container mt-5 pt-5 mb-5 pb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="font-weight-bold text-uppercase testro">testr<span>o</span></h5>
+                    <ul class="d-flex p-0 m-0 mt-5 social-icon">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="p-0 m-0 navigation-list">
+                        <li><h5 class="font-weight-bold">Navigation</h5></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Write a review</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="p-0 m-0 link-list">
+                        <li><h5 class="font-weight-bold">Links</h5></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Marchant</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="p-0 m-0 download">
+                        <li><h5 class="font-weight-bold">Download App</h5></li>
+                        <li><a href="#"><img class="img-fluid mt-1 mb-1" src="../assets/app.png" alt=""></a></li>
+                        <li><a href="#"><img class="img-fluid mt-1" src="../assets/google.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer top section end-->
+    <!--  footer bottom section start  -->
+    <section class="footer-bottom">
+        <div class="container mt-3 mb-2 pt-3 text-center">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <p class="text-muted">© RoyalfoodInc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer bottom section end-->
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+
+</html>
